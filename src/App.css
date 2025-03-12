@@ -1,0 +1,59 @@
+/* App.css */
+
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: Poppins, Arial, sans-serif;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+.brands h2 {
+  font-size: 2rem;
+}
+
+.brands .brand-logos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+/* Products Section */
+.services {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.services h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.services .product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.services .product-grid img {
+  width: 100%;
+  height: auto;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}

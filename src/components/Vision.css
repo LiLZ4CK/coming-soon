@@ -1,0 +1,55 @@
+.vision {
+    background-image: url('../../public/images/shutterstock_2533895873.jpg');
+    background-color: rgba(21, 109, 121, 0.5); 
+    background-blend-mode: multiply;
+    text-align: center;
+    padding: 50px 0;
+}
+
+@font-face {
+    font-family: 'Romelio';
+    src: url('../../public/fonts/Romelio.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.title{
+    margin-top: 8%;
+    font-family: 'Romelio', sans-serif;
+    font-size: 45px;
+    letter-spacing: 8px;
+    color: aliceblue;
+}
+
+
+.vision-content{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    line-height: 60px;
+    display: flex;
+
+}
+
+.left, .centre, .right {
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+
+
+
+h2 {
+    font-family: 'Romelio', sans-serif;
+    color: aliceblue;
+    font-size: 80px;
+    margin: 10px 0;
+}
+
+p {
+    color: aliceblue;
+    font-size: 26px;
+    line-height: 1.5;
+}

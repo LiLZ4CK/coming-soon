@@ -1,0 +1,30 @@
+
+.carriere {
+    height: 100vh;
+    background-image: url('../../public/images/shutterstock_2518436917.png');
+    background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  @font-face {
+      font-family: 'Romelio';
+      src: url('../../public/fonts/Romelio.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+    }
+  
+  .carriere-content{
+    align-items: center;
+    font-family: 'Romelio', sans-serif;
+    letter-spacing: 5px;
+    margin-top: 18%;
+    font-size: 25px;
+  }
+  
+  .carriere button{
+    background-color: transparent;
+  }

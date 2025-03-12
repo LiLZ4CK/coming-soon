@@ -1,0 +1,30 @@
+.marque {
+    background-color: #003851;
+    padding: 20px;
+    z-index: 1000;
+    transition: top 0.3s ease;
+  }
+  .marque h1{
+    font-family: 'Romelio', sans-serif;
+    color:white;
+    margin-top: -15%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    line-height: 60px;
+    display: flex;
+    font-size: 30px;
+}
+  .marque-images {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .marque-images img {
+    width: 400px; 
+    height: auto;
+    border-radius: 10px;
+    
+}
+
+

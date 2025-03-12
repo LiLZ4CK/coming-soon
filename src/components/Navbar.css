@@ -1,0 +1,81 @@
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #003851;
+  padding: 20px;
+  z-index: 1000;
+  transition: top 0.3s ease;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Left and right links */
+.left-links, .right-links {
+  display: flex;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 15px; /* Reduce the space between items */
+  font-family: 'Arial', sans-serif;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+@font-face {
+  font-family: 'Romelio';
+  src: url('../../public/fonts/Romelio.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Center the "ARENA" link */
+.center-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.left-links ul li, .right-links ul li {
+  margin: 0 55px;
+}
+
+.center-link ul {
+  display: flex;
+  justify-content: center;
+}
+
+.center-link ul li {
+  margin: 0;
+  font-size: 30px;
+  font-family: 'Romelio', sans-serif;
+}
+
+.logo {
+  height: 50px;
+}
+
+section {
+  min-height: 100vh;
+  padding: 50px;
+}
