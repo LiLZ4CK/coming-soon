@@ -5,9 +5,9 @@ const Carriere = () => {
   return (
     <section id="home" className="carriere">
       <div className="carriere-content">
-        <button class="button">
+        <a href="mailto:contact@arenaproperty.ma" className="button">
             <b>CONTACTEZ-NOUS</b>
-        </button>
+        </a>
       </div>
     </section>
   );

@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import Actualites from './components/Actualites';
 import Group from './components/Group';
 import Vision from './components/Vision';
 import Metiers from './components/Metiers';
@@ -18,6 +19,7 @@ const App = () => {
       <div id="vision"><Vision /></div>
       <div id="metiers"><Metiers /></div>
       <div id="marque"><Marque /></div>
+      <div id="actualites"><Actualites /></div>
       <div id="carriere"><Carriere /></div>
       <div id="footer"><Footer /></div>
     </div>

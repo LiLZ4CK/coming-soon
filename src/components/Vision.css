@@ -1,9 +1,14 @@
 .vision {
+    height: 110vh;
     background-image: url('../../public/images/shutterstock_2533895873.jpg');
-    background-color: rgba(21, 109, 121, 0.5); 
+    background-color: #225679e6; 
+    background-size: cover;
+    background-position: center;
+    display: flex;
     background-blend-mode: multiply;
+    background-position-y: -200px;
     text-align: center;
-    padding: 50px 0;
+    position: relative; /* Ensure the title is positioned relative to the vision section */
 }
 
 @font-face {
@@ -11,45 +16,47 @@
     src: url('../../public/fonts/Romelio.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
-  }
-
-.title{
-    margin-top: 8%;
-    font-family: 'Romelio', sans-serif;
-    font-size: 45px;
-    letter-spacing: 8px;
-    color: aliceblue;
 }
 
-
-.vision-content{
-    align-items: center;
+.title {
+    position: absolute; /* Position the title absolutely */
+    top: 5%; /* Adjust the top position as needed */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    font-family: 'Romelio', sans-serif;
+    font-size: 27px;
+    letter-spacing: 3px;
+    color: aliceblue;
     text-align: center;
-    justify-content: center;
-    line-height: 60px;
-    display: flex;
+}
 
+.vision-content {
+    display: flex;
+    align-items: flex-start; /* Align items to the start */
+    text-align: center;
+    justify-content: space-between; /* Distribute space between items */
+    margin-top: 17%;
+    margin-left: 15%;
 }
 
 .left, .centre, .right {
-    margin-top: 10%;
-    margin-left: 10%;
-    margin-right: 10%;
+    flex: 1;
+    margin: 0 100px; /* Adjust the margin as needed */
+}
+
+.vision-content h2 {
+    font-family: 'Romelio', sans-serif;
+    color: aliceblue;
+    font-size: 100px; /* Adjust font size if needed */
+    margin: 0; /* Remove top margin */
     text-align: center;
 }
 
-
-
-
-h2 {
-    font-family: 'Romelio', sans-serif;
+.vision-content p {
+    width: 200px;
+    margin: 10px auto 0; /* Center align and add top margin */
     color: aliceblue;
-    font-size: 80px;
-    margin: 10px 0;
-}
-
-p {
-    color: aliceblue;
-    font-size: 26px;
+    font-size: 18px;
     line-height: 1.5;
-}
+    text-align: center;
+}   

@@ -21,10 +21,17 @@
     align-items: center;
     font-family: 'Romelio', sans-serif;
     letter-spacing: 5px;
-    margin-top: 18%;
+    margin-top: 8%;
     font-size: 25px;
   }
   
-  .carriere button{
+  .button{
     background-color: transparent;
+    border: 1px solid #00424a;
+    padding: 10px 20px;
+    color: #00424a;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 0; 
   }

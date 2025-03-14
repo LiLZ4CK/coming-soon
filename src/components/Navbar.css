@@ -1,46 +1,3 @@
-/* Navbar */
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #003851;
-  padding: 20px;
-  z-index: 1000;
-  transition: top 0.3s ease;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-/* Left and right links */
-.left-links, .right-links {
-  display: flex;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  padding: 0;
-  margin: 0;
-}
-
-nav ul li {
-  margin: 0 15px; /* Reduce the space between items */
-  font-family: 'Arial', sans-serif;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-  padding: 10px;
-  transition: color 0.3s ease;
-}
-
 @font-face {
   font-family: 'Romelio';
   src: url('../../public/fonts/Romelio.otf') format('opentype');
@@ -48,32 +5,86 @@ nav ul li a {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Poppins-Light';
+  src: url('../../public/fonts/Poppins-Light.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #003851;
+  padding: 20px;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.left-links, .right-links {
+  font-family: 'Poppins-Light';
+  font-weight: lighter;
+  font-size: 13px;
+  letter-spacing: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.left-links{
+  margin-left: -180px;
+}
+.right-links {
+  margin-right: -80px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Ensures consistent spacing */
+}
+
+nav ul li {
+  white-space: nowrap; /* Prevents text from wrapping */
+}
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+
 /* Center the "ARENA" link */
 .center-link {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.left-links ul li, .right-links ul li {
-  margin: 0 55px;
-}
-
-.center-link ul {
-  display: flex;
-  justify-content: center;
-}
-
-.center-link ul li {
-  margin: 0;
-  font-size: 30px;
-  font-family: 'Romelio', sans-serif;
+  flex: 0; /* Prevents stretching */
 }
 
 .logo {
-  height: 50px;
+  height: 120px; /* Adjust based on your preference */
+  width: auto;
+  margin-top: -40px;
+  margin-bottom: -50px;
 }
+
+.left-links ul li, .right-links ul li {
+  margin: 0 5px;
+}
+
 
 section {
   min-height: 100vh;

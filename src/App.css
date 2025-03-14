@@ -1,10 +1,21 @@
-/* App.css */
+@font-face {
+  font-family: 'Romelio';
+  src: url('../public/fonts/Romelio.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 
-/* Basic reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@font-face {
+  font-family: 'Poppins-Light';
+  src: url('../public/fonts/Poppins-Light.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway-Bold';
+  src: url('../public/fonts/Raleway-Bold.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 html, body {
@@ -48,12 +59,4 @@ html, body {
 .services .product-grid img {
   width: 100%;
   height: auto;
-}
-
-/* Footer */
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
 }

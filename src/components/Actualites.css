@@ -1,0 +1,130 @@
+.actualites-container {
+  width: 98%;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  margin-left: -1%;
+}
+
+.actualites-title {
+  text-align: center;
+  font-family: 'Romelio';
+  color: #00424a;
+  font-size: 40px; /* Increase the font size */
+  margin-bottom: 50px;
+  font-weight: lighter;
+}
+
+.actualites-carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00424a;
+  padding: 50px 20px;
+  width: 100%; /* Ensure the carousel takes the full width */
+}
+
+.carousel-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+  transition: all 0.5s ease;
+}
+
+.news-card {
+  background-color: #d9d9d9;
+  width: calc(33.33% - 14px);
+  min-width: 320px; /* Increase the minimum width */
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s ease;
+}
+
+.news-image {
+  height: 200px; /* Increase the height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.news-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.news-content {
+  padding: 20px;
+}
+
+.news-content h3 {
+  color: #000;
+  font-size: 1.4rem; /* Increase the font size */
+  margin-bottom: 20px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.news-source {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.source-logo {
+  height: 40px; /* Increase the height */
+  max-width: 100px;
+}
+
+.news-date {
+  margin-left: 10px;
+  color: #666;
+}
+
+.carousel-button {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 50%;
+  width: 50px; /* Increase the width */
+  height: 50px; /* Increase the height */
+  font-size: 24px; /* Increase the font size */
+  color: #00424a;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.carousel-button.prev {
+  left: 15px;
+}
+
+.carousel-button.next {
+  right: 15px;
+}
+
+/* Animation for slide transition */
+@keyframes slideAnimation {
+  from {
+      opacity: 0.7;
+      transform: scale(0.95);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+.news-card {
+  animation: slideAnimation 0.5s ease forwards;
+}

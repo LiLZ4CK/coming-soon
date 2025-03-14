@@ -14,7 +14,7 @@
 }
 
 .footer {
-    height: 40vh; 
+    height: 30vh; 
     background-color: #003851;
     color: white;
     display: flex;
@@ -33,9 +33,8 @@
   }
   
   .company-name{
-    font-family: 'Romelio', sans-serif;
-    font-size: 60px;
-    letter-spacing: 6px;
+    width: 300px;
+    margin-top: 44%;
   }
   
   .company-subtitle {
@@ -44,8 +43,10 @@
   }
 
   .copyright {
-    margin-top: 20px;
-    font-size: 14px;
+    position: absolute;
+    font-size: 16px;
+    margin-left: -72%;
+    margin-top: 15%;
     opacity: 0.7;
   }
   
@@ -65,4 +66,44 @@
     word-spacing: 1px;
   }
   
+
+  .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+  }
   
+  .social-media .ig {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    margin-top: -5%;
+    margin-left: -25%;
+    text-decoration: none;
+    color: white;
+  }
+  .social-media .fb {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    margin-top: -5.01%;
+    margin-left: -27%;
+    text-decoration: none;
+    color: white;
+  }
+  .social-media .in {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    margin-top: -5%;
+    margin-left: -23%;
+    text-decoration: none;
+    color: white;
+  }
